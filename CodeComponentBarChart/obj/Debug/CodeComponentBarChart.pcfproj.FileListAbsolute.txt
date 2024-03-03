@@ -1,2 +1,0 @@
-D:\CodeComponentsPowerApps\CodeComponentBarChart\obj\Debug\CodeComponentBarChart.pcfproj.AssemblyReference.cache
-D:\CodeComponentsPowerApps\CodeComponentBarChart\obj\Debug\CodeComponentBarChart.pcfproj.CoreCompileInputs.cache
