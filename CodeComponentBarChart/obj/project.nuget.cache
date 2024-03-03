@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "r8hBNjKZ+J+sgo0tGZ9FXV8lOBG0GqO7jW2ZCGyCLjLZtzG2CHZf1q+YzbPWyN9OmsAUG46nSdYDabEviVcNkA==",
+  "success": true,
+  "projectFilePath": "D:\\CodeComponentsPowerApps\\CodeComponentBarChart\\CodeComponentBarChart.pcfproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ialexandridis\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.0\\microsoft.netframework.referenceassemblies.1.0.0.nupkg.sha512",
+    "C:\\Users\\ialexandridis\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net462\\1.0.0\\microsoft.netframework.referenceassemblies.net462.1.0.0.nupkg.sha512",
+    "C:\\Users\\ialexandridis\\.nuget\\packages\\microsoft.powerapps.msbuild.pcf\\1.29.9\\microsoft.powerapps.msbuild.pcf.1.29.9.nupkg.sha512"
+  ],
+  "logs": []
+}

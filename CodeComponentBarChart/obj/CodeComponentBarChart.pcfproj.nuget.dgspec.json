@@ -1,0 +1,50 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\CodeComponentsPowerApps\\CodeComponentBarChart\\CodeComponentBarChart.pcfproj": {}
+  },
+  "projects": {
+    "D:\\CodeComponentsPowerApps\\CodeComponentBarChart\\CodeComponentBarChart.pcfproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\CodeComponentsPowerApps\\CodeComponentBarChart\\CodeComponentBarChart.pcfproj",
+        "projectName": "CodeComponentBarChart",
+        "projectPath": "D:\\CodeComponentsPowerApps\\CodeComponentBarChart\\CodeComponentBarChart.pcfproj",
+        "packagesPath": "C:\\Users\\ialexandridis\\.nuget\\packages\\",
+        "outputPath": "D:\\CodeComponentsPowerApps\\CodeComponentBarChart\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ialexandridis\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net462"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Microsoft.PowerApps.MSBuild.Pcf": {
+              "target": "Package",
+              "version": "[1.*, )"
+            }
+          }
+        }
+      }
+    }
+  }
+}
