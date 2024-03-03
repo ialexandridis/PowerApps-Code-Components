@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="CodeComponent" constructor="cmpBarChart" version="3.0.4" display-name-key="cmpBarChart" description-key="Use Palette1-Palette12" control-type="standard" >
+    <!--external-service-usage node declares whether this 3rd party PCF control is using external service or not, if yes, this control will be considered as premium and please also add the external domain it is using.
+    If it is not using any external service, please set the enabled="false" and DO NOT add any domain below. The "enabled" will be false by default.
+    Example1:
+      <external-service-usage enabled="true">
+        <domain>www.Microsoft.com</domain>
+      </external-service-usage>
+    Example2:
+      <external-service-usage enabled="false">
+      </external-service-usage>
+    -->
+    <external-service-usage enabled="false">
+      <!--UNCOMMENT TO ADD EXTERNAL DOMAINS
+      <domain></domain>
+      <domain></domain>
+      -->
+    </external-service-usage>
+    <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
+
+    <property name="ColorPalettePreference" display-name-key="Color Palette" description-key="ColorPalettePreference" of-type="Enum" usage="input" required="false">
+      <value name="Light Green" display-name-key="Light Green" default="true">Light_Green</value>
+      <value name="Yellow" display-name-key="Yellow">Yellow</value>
+      <value name="Purple" display-name-key="Purple">Purple</value>
+      <value name="Blue Gray" display-name-key="Blue Gray">Blue_Gray</value>
+      <value name="Gold" display-name-key="Gold">Gold</value>
+      <value name="Dark Grayish Purple" display-name-key="Dark Grayish Purple">Dark_Grayish_Purple</value>
+      <value name="Pale Yellow" display-name-key="Pale Yellow">Pale_Yellow</value>
+      <value name="Pink" display-name-key="Pink">Pink</value>
+      <value name="Light Blue" display-name-key="Light Blue">Light_Blue</value>
+      <value name="Teal" display-name-key="Teal">Teal</value>
+      <value name="Cream" display-name-key="Cream">Cream</value>
+      <value name="Steel Blue" display-name-key="Steel Blue">Steel_Blue</value>
+    </property>
+
+    <!-- Add a custom property for the chart title -->
+    <property name="chartTitle" display-name-key="Chart Title" description-key="Chart_Title_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
+    <!-- Add properties for height and width -->
+    <property name="chartHeight" display-name-key="Chart Height" description-key="Chart_Height_Description" of-type="Whole.None" usage="bound" />
+    <property name="chartWidth" display-name-key="Chart Width" description-key="Chart_Width_Description" of-type="Whole.None" usage="bound" />
+
+    <!--
+    <property name="xAxisLabels" usage="input" display-name-key="XAxisLabelsDisplayName" of-type="SingleLine.Text"/>
+    <property name="yAxisValues" usage="input" display-name-key="YAxisValuesDisplayName" of-type="Whole.None"/>
+    -->
+
+        
+    <property name="yAxisValues" display-name-key="YAxisValues" description-key="YAxisValuesDesc" of-type="Multiple" usage="input" />
+    <property name="xAxisLabels" display-name-key="XAxisLabels" description-key="XAxisLabelsDesc" of-type="SingleLine.Text" usage="input" />
+
+
+    <property name="titleSize" display-name-key="Title Size" description-key="titleSize" of-type="Whole.None" usage="bound" />
+    <property name="chartTextsSize" display-name-key="Chart Texts Size" description-key="chartTexts" of-type="Whole.None" usage="bound" />
+
+
+    <!--
+      Property node's of-type attribute can be of-type-group attribute.
+      Example:
+      <type-group name="numbers">
+        <type>Whole.None</type>
+        <type>Currency</type>
+        <type>FP</type>
+        <type>Decimal</type>
+      </type-group>
+      <property name="sampleProperty" display-name-key="Property_Display_Key" description-key="Property_Desc_Key" of-type-group="numbers" usage="bound" required="true" />
+    -->
+    <resources>
+      <code path="index.ts" order="1"/>
+      <!-- UNCOMMENT TO ADD MORE RESOURCES
+      <css path="css/codecomponent1.css" order="1" />
+      <resx path="strings/codecomponent1.1033.resx" version="1.0.0" />
+      -->
+    </resources>
+    <!-- UNCOMMENT TO ENABLE THE SPECIFIED API
+    <feature-usage>
+      <uses-feature name="Device.captureAudio" required="true" />
+      <uses-feature name="Device.captureImage" required="true" />
+      <uses-feature name="Device.captureVideo" required="true" />
+      <uses-feature name="Device.getBarcodeValue" required="true" />
+      <uses-feature name="Device.getCurrentPosition" required="true" />
+      <uses-feature name="Device.pickFile" required="true" />
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+    -->
+  </control>
+</manifest>
